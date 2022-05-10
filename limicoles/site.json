@@ -1,0 +1,64 @@
+{
+  "cruved": {
+    "C": 3,
+    "U": 3,
+    "D": 3
+  },
+  "sorts": [
+    {
+      "prop": "base_site_name",
+      "dir": "asc"
+    }
+  ],
+  "filters": {},
+  "geometry_type": "Point",
+  "display_properties": [
+    "id_sites_group",
+    "base_site_code",
+    "base_site_name",
+    "dept",
+    "statut_protec",
+    "base_site_description",
+    "domaine",
+    "effet",
+    "last_visit",
+    "nb_visits"
+  ],
+  "display_list": [
+    "id_sites_group",
+    "base_site_name",
+    "last_visit",
+    "nb_visits"
+  ],
+  "specific":{
+    "dept": {
+      "type_widget": "select",
+      "required": true,
+      "attribut_label": "Département",
+      "values": ["Alpes Maritimes (06)","Aude (11)","Bouches du Rhône (13)","Calvados (14)","Charente-Maritime (17)","Haute Corse (2A)","Corse du Sud (2B)","Côtes d'Armor (22)","Finistère (29)","Gard (30)","Gironde (33)","Hérault (34)","Ille-et-Vilaine (35)","Landes (40)","Loire-Atlantique (44)","Manche (50)","Morbihan (56)","Nord (59)","Pas-De-Calais (62)","Pyrénées Atlantiques (64)","Pyrénées Orientales (66)","Seine-Maritime (76)","Somme (80)","Var (83)","Vendée (85)"]
+    },
+    "statut_protec": {
+      "type_widget": "select",
+      "required": true,
+      "attribut_label": "Statut de protection",
+      "values": ["Statut 1", "Statut 2"]
+    },
+    "domaine": {
+      "type_widget": "select",
+      "required": true,
+      "attribut_label": "Domaine",
+      "values": ["Terrestre", "Maritime", "Mixte"]
+    },
+    "effet": {
+      "type_widget": "radio",
+      "required": true,
+      "attribut_label": "Enjeu de gestion spécifique pour les limicoles ?",
+      "values": ["Oui", "Non"]
+    },
+    "id_sites_group": {
+      "attribut_label": "Site fonctionnel",
+      "required": true,
+      "hidden": false
+    }
+  }
+}

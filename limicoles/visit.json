@@ -1,0 +1,119 @@
+{
+  "display_properties": [
+    "visit_date_min",
+    "cycle",
+    "obsv_histo",
+    "comptage",
+    "denombrement",
+    "etat_eau_ter",
+    "etat_eau_dpm",
+    "coeff",
+    "meteo",
+    "brouillard",
+    "pluie",
+    "vent",
+    "evaporation",
+    "derangement",
+    "comments",
+    "nb_observations"
+  ],
+  "display_list": [
+    "visit_date_min",
+    "cycle",
+    "obsv_histo",
+    "nb_observations"
+  ],
+  "specific": {
+    "observers": {
+      "hidden": true,
+      "required": false
+    },
+    "obsv_histo": {
+      "type_widget": "text",
+      "attribut_label": "Observateurs",
+      "required": true
+    },
+    "cycle": {
+      "type_widget": "text",
+      "attribut_label": "Cycle Annuel",
+      "hidden" : true
+    },
+    "comptage": {
+      "type_widget": "radio",
+      "required": true,
+      "attribut_label": "Type de comptage",
+      "values": ["Total", "Partiel"]
+    },
+    "denombrement": {
+      "type_widget": "select",
+      "required": true,
+      "attribut_label": "Type de dénombrement",
+      "values": ["Terrestre", "Aérien", "Bateau"]
+    },
+    "etat_eau_ter": {
+      "type_widget": "select",
+      "required": false,
+      "attribut_label": "Etat de l'eau (si domaine terrestre)",
+      "values": ["Normal", "Asséché", "Gelé"],
+      "hidden": "({meta}) =>  (meta.parents.site.properties.domaine != 'Terrestre' && meta.parents.site.properties.domaine != 'Mixte')"
+    },
+    "etat_eau_dpm": {
+      "type_widget": "radio",
+      "required": false,
+      "attribut_label": "Etat de l'eau (si domaine maritime)",
+      "values": ["Haute Mer", "Basse Mer"],
+      "hidden": "({meta}) => (meta.parents.site.properties.domaine != 'Maritime' && meta.parents.site.properties.domaine != 'Mixte')"
+    },
+    "coeff": {
+      "type_widget": "number",
+      "attribut_label": "Coefficient de marée",
+      "required": true
+    },
+    "meteo": {
+      "type_widget": "select",
+      "required": true,
+      "attribut_label": "Conditions générales",
+      "values": ["Bonnes", "Médiocres", "Mauvaises"]
+    },
+    "brouillard": {
+      "type_widget": "bool_checkbox",
+      "attribut_label": "Brouillard",
+      "value" : "false",
+      "hidden": "({value}) => (value.meteo != 'Médiocres' && value.meteo != 'Mauvaises')"
+    },
+    "pluie": {
+      "type_widget": "bool_checkbox",
+      "attribut_label": "Pluie",
+      "value" : "false",
+      "hidden": "({value}) => (value.meteo != 'Médiocres' && value.meteo != 'Mauvaises')"
+    },
+    "vent": {
+      "type_widget": "bool_checkbox",
+      "attribut_label": "Vent",
+      "value" : "false",
+      "hidden": "({value}) => (value.meteo != 'Médiocres' && value.meteo != 'Mauvaises')"
+    },
+    "evaporation": {
+      "type_widget": "bool_checkbox",
+      "attribut_label": "Evaporation",
+      "value" : "false",
+      "hidden": "({value}) => (value.meteo != 'Médiocres' && value.meteo != 'Mauvaises')"
+    },
+    "derangement": {
+      "type_widget": "bool_checkbox",
+      "attribut_label": "Dérangement",
+      "value" : "false",
+      "hidden": "({value}) => (value.meteo != 'Médiocres' && value.meteo != 'Mauvaises')"
+    }
+  },
+  "change": [
+      "({objForm, meta}) => {",
+      "let cycle;",
+      "if(objForm.value.visit_date_min.month > 6){cycle = objForm.value.visit_date_min.year + '-' + (objForm.value.visit_date_min.year + 1) } else {cycle = (objForm.value.visit_date_min.year - 1) + '-' + objForm.value.visit_date_min.year};",
+      "if (!objForm.controls.cycle.dirty) {",
+      "objForm.patchValue({cycle})",
+      "}",
+      "}",
+      ""
+      ]
+}
