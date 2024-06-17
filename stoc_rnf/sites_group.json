@@ -1,0 +1,45 @@
+{
+  "genre": "M",
+  "label": "Site",
+  "label_list": "Sites",
+  "sorts": [
+    {"prop": "sites_group_name"}
+  ],
+  "display_properties": [
+    "sites_group_name",
+    "nom_local"
+  ],
+  "display_list": [
+    "sites_group_name"
+  ],
+  "specific": {
+    "sites_group_name": {
+      "type_widget": "text",
+      "attribut_label": "Nom de référence national",
+      "required": true,
+      "definition": "Nom de référence nationale du site STOC." 
+    },
+    "nom_local": {
+      "type_widget": "text",
+      "attribut_label": "Nom local",
+      "required": false,
+      "definition": "Nom local du site STOC le cas échéant." 
+    },
+    "sites_group_code": {
+      "type_widget": "text",
+      "attribut_label": "Numéro de l'aire",
+      "required": false,
+      "hidden":true
+    },
+    "sites_group_description": {
+      "type_widget": "textarea",
+      "attribut_label": "Description",
+      "hidden":true
+    },
+    "comments": {
+      "type_widget": "textarea",
+      "attribut_label": "Commentaire",
+      "hidden":true
+    }
+  }
+}

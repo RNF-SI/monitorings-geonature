@@ -1,0 +1,160 @@
+{
+  "genre":"M",
+  "label": "Passage",
+  "label_list": "Passages",
+  "display_properties": [
+    "visit_date_min",
+    "time_start",
+    "time_stop",
+    "passage_num",
+    "cloud",
+    "rain",
+    "wind",
+    "visibility",
+    "snow",
+    "habitat_principal_1",
+    "habitat_principal_2",
+    "habitat_principal_3a",
+    "habitat_principal_3b",
+    "habitat_principal_4a",
+    "habitat_principal_4b",
+    "habitat_secondaire_1",
+    "habitat_secondaire_2",
+    "habitat_secondaire_3a",
+    "habitat_secondaire_3b",
+    "habitat_secondaire_4a",
+    "habitat_secondaire_4b"
+  ],
+  "display_list": [
+    "visit_date_min",
+    "passage_num"
+  ],
+  "specific": {
+    "observers": {
+      "hidden": true,
+      "required": false
+    },
+    "visit_date_min": {
+      "type_widget": "date",
+      "attribut_label": "Date du passage",
+      "required": true
+    },
+    "time_start": {
+      "type_widget": "time",
+      "attribut_label": "Heure de début"
+    },
+    "time_stop": {
+      "type_widget": "time",
+      "attribut_label": "Heure de fin"
+    },
+    "passage_num": {
+      "type_widget": "radio",
+      "required": true,
+      "attribut_label": "Numéro de passage",
+      "values": ["1", "2","3"]
+    },
+    "id_observateur": {
+      "type_widget": "number",
+      "required": false,
+      "attribut_label": "ID de l'observateur (Faune-France)"
+    },
+    "id_universel_observateur": {
+      "type_widget": "number",
+      "required": false,
+      "attribut_label": "ID universel de l'observateur (Faune-France)"
+    },
+    "cloud": {
+      "type_widget": "select",
+      "required": true,
+      "attribut_label": "Couverture nuageuse",
+      "values": ["Couvert 1/3", "Couvert 2/3", "Couvert 3/3"]
+    },
+    "rain": {
+      "type_widget": "select",
+      "required": true,
+      "attribut_label": "Pluie",
+      "values": ["Pas de pluie", "Faible pluie", "Forte pluie"]
+    },
+    "wind": {
+      "type_widget": "select",
+      "required": true,
+      "attribut_label": "Vent",
+      "values": ["Pas de vent", "Vent faible", "Vent assez fort"]
+    },
+    "visibility": {
+      "type_widget": "select",
+      "required": true,
+      "attribut_label": "Visibilité",
+      "values": ["Bonne visibilité", "visibilité modérée", "Mauvaise visibilité"]
+    },
+    "snow": {
+      "type_widget": "select",
+      "required": true,
+      "attribut_label": "Enneigement",
+      "values": ["Pas de neige", "0-1 cm", "1-5 cm","> 5 cm"]
+    },
+    "habitat_principal_1":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat principal 1"
+    },
+    "habitat_principal_2":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat principal 2"
+    },
+    "habitat_principal_3a":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat principal 3a"
+    },
+    "habitat_principal_3b":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat principal 3b"
+    },
+    "habitat_principal_4a":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat principal 4a"
+    },
+    "habitat_principal_4b":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat principal 4b"
+    },
+    "habitat_secondaire_1":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat secondaire 1"
+    },
+    "habitat_secondaire_2":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat secondaire 2"
+    },
+    "habitat_secondaire_3a":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat secondaire 3a"
+    },
+    "habitat_secondaire_3b":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat secondaire 3b"
+    },
+    "habitat_secondaire_4a":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat secondaire 4a"
+    },
+    "habitat_secondaire_4b":{
+      "type_widget": "text",
+      "required": false, 
+      "attribut_label": "Habitat secondaire 4b"
+    },
+    "comments": {
+      "hidden": true
+    }
+  }
+}

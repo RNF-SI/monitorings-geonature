@@ -1,0 +1,50 @@
+{
+    "display_properties": [
+      "uuid",
+      "cd_nom",
+      "nb_inf_25",
+      "nb_25_100",
+      "nb_100_200",
+      "nb_sup_200m",
+      "nb_vol",
+      "comments"
+    ],
+    "display_list": [
+      "cd_nom",
+      "nb_inf_25",
+      "nb_25_100",
+      "nb_100_200",
+      "nb_sup_200m",
+      "nb_vol"
+    ],
+    "specific": {
+        "uuid":{
+            "type_widget": "text",
+            "required": false, 
+            "attribut_label": "UUID"
+        },
+      "nb_inf_25": {
+        "type_widget": "number",
+        "attribut_label": "Effectif à moins de 25m"
+      },
+      "nb_25_100": {
+        "type_widget": "number",
+        "attribut_label": "Effectif 25 à 100m"
+      },
+      "nb_100_200": {
+        "type_widget": "number",
+        "attribut_label": "Effectif 100 à 200m"
+      },
+      "nb_sup_200m": {
+        "type_widget": "number",
+        "attribut_label": "Effectif au delà de 200m"
+      },
+      "nb_vol": {
+        "type_widget": "number",
+        "attribut_label": "Effectif en vol"
+      },
+      "comments": {
+        "attribute_label": "Commentaire"
+      }
+    }
+  }

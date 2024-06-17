@@ -1,0 +1,67 @@
+{
+    "genre" : "M",
+    "geometry_type": "Point",
+    "label": "Point de comptage",
+    "label_list": "Points de comptage",
+    "sorts": [
+      {
+        "prop": "num_point_stoc",
+        "dir": "asc"
+      }
+    ],
+    "display_properties": [
+      "base_site_name",
+      "id_sites_group",
+      "num_point_stoc",
+      "altitude"
+    ],
+    "display_list": [
+      "base_site_name",
+      "id_sites_group"
+    ],
+    "specific": {
+        "id_nomenclature_type_site": {
+          "type_widget": "nomenclature",
+          "attribut_label": "Type site",
+          "code_nomenclature_type": "TYPE_SITE",
+          "type_util": "nomenclature",
+          "required": true,
+          "value": {
+            "code_nomenclature_type": "TYPE_SITE",
+            "cd_nomenclature": "STOC"
+          },
+          "hidden": true
+        },
+      "base_site_name": {
+          "type_widget": "text",
+          "attribut_label": "Nom du point d'écoute",
+          "required": true
+      },
+      "id_sites_group": {
+        "type_widget": "datalist",
+        "attribut_label": "Site",
+        "type_util": "sites_group",
+        "keyValue": "id_sites_group",
+        "keyLabel": "sites_group_name",
+        "api": "__MONITORINGS_PATH/list/__MODULE.MODULE_CODE/sites_group?id_module=__MODULE.ID_MODULE",
+        "application": "GeoNature",
+        "required": true,
+        "hidden": false
+      },
+      "base_site_code": {
+        "type_widget": "text",
+        "attribut_label": "ID du point d'écoute (id_lieu_dit dans FAUNE-FRANCE)",
+        "required": false
+      },
+      "altitude": {
+        "type_widget": "number",
+        "attribut_label": "Altitude",
+        "required": false
+      },
+      "num_point_stoc": {
+        "type_widget": "number",
+        "attribut_label": "Numéro du point STOC",
+        "required": true
+      }
+    }
+}

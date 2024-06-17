@@ -1,0 +1,11 @@
+{
+    "module_label":"Suivi Temporel des Oiseaux Communs",
+    "module_desc":"Module de bancarisation des données STOC (n'a pas vocation à permettre la saisie)",
+    "b_draw_sites_group": true,
+    "genre":"M",
+    "specific": {
+      "b_draw_sites_group": {
+        "hidden": false
+      }
+    }
+}
