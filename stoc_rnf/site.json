@@ -17,7 +17,9 @@
     ],
     "display_list": [
       "base_site_name",
-      "id_sites_group"
+      "id_sites_group",
+      "last_visit",
+      "nb_visits"
     ],
     "specific": {
         "id_nomenclature_type_site": {
@@ -62,6 +64,10 @@
         "type_widget": "number",
         "attribut_label": "Numéro du point STOC",
         "required": true
+      },
+      "first_use_date": {
+        "type_widget": "date",
+        "hidden": true 
       }
     }
 }

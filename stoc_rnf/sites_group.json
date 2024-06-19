@@ -7,10 +7,13 @@
   ],
   "display_properties": [
     "sites_group_name",
-    "nom_local"
+    "nom_local",
+    "id_rn"
   ],
   "display_list": [
-    "sites_group_name"
+    "sites_group_name",
+    "id_rn",
+    "nb_sites"
   ],
   "specific": {
     "sites_group_name": {
@@ -40,6 +43,19 @@
       "type_widget": "textarea",
       "attribut_label": "Commentaire",
       "hidden":true
+    },
+    "id_rn": {
+      "type_widget": "datalist",
+      "attribut_label": "Réserve naturelle",  
+      "keyValue": "area_code",
+      "keyLabel": "area_name",
+      "api": "geo/areas?type_code=RNN,RNR,RNC&without_geom=true",
+      "application": "GeoNature",
+      "required": true,
+      "hidden": false
+    },
+    "nb_sites": {
+      "attribut_label": "Nb. de points de comptage"
     }
   }
 }
