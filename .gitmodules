@@ -1,0 +1,3 @@
+[submodule "habitats_sedimentaires_intertidaux"]
+	path = habitats_sedimentaires_intertidaux
+	url = git@github.com:RNF-SI/habitats_sedimentaires_intertidaux.git
