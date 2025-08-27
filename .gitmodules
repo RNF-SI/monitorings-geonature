@@ -13,3 +13,6 @@
 [submodule "stoc_rnf"]
 	path = stoc_rnf
 	url = git@github.com:RNF-SI/stoc_rnf.git
+[submodule "zones_alim_limicoles"]
+	path = zones_alim_limicoles
+	url = git@github.com:RNF-SI/zones_alim_limicoles.git
