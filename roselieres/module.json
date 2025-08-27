@@ -1,9 +1,0 @@
-{
-    "module_label":"Protocole Roselières",
-    "module_desc":"Module de saisie des données du protocole Roselières",
-    "permission_objects" : [
-        "GNM_GRP_SITES",
-        "GNM_SITES",
-        "GNM_VISITES"
-    ]
-}
