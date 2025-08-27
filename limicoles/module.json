@@ -1,9 +1,0 @@
-{
-    "module_label":"Limicoles Côtiers",
-    "module_desc":"Module de suivi des limicoles côtiers porté par Réserves Naturelles de France",
-    "permission_objects" : [
-        "GNM_GRP_SITES",
-        "GNM_SITES",
-        "GNM_VISITES"
-    ]
-}
