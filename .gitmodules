@@ -4,3 +4,6 @@
 [submodule "syrph_the_net"]
 	path = syrph_the_net
 	url = git@github.com:RNF-SI/syrph_the_net.git
+[submodule "roselieres"]
+	path = roselieres
+	url = git@github.com:RNF-SI/roselieres.git
