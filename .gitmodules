@@ -1,3 +1,6 @@
 [submodule "habitats_sedimentaires_intertidaux"]
 	path = habitats_sedimentaires_intertidaux
 	url = git@github.com:RNF-SI/habitats_sedimentaires_intertidaux.git
+[submodule "syrph_the_net"]
+	path = syrph_the_net
+	url = git@github.com:RNF-SI/syrph_the_net.git
