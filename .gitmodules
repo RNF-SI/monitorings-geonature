@@ -7,3 +7,6 @@
 [submodule "roselieres"]
 	path = roselieres
 	url = git@github.com:RNF-SI/roselieres.git
+[submodule "limicoles"]
+	path = limicoles
+	url = git@github.com:RNF-SI/limicoles.git
