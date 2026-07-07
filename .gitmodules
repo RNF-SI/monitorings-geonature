@@ -16,7 +16,7 @@
 [submodule "zones_alim_limicoles"]
 	path = zones_alim_limicoles
 	url = git@github.com:RNF-SI/zones_alim_limicoles.git
-[submodule "presales-ichtyofaune"]
-	path = presales-ichtyofaune
-	url = git@github.com:RNF-SI/presales-ichtyofaune.git
+[submodule "presales-ichtyofaune-volet-peche"]
+	path = presales-ichtyofaune-volet-peche
+	url = git@github.com:RNF-SI/presales-ichtyofaune-volet-peche.git
 	branch = main
