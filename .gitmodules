@@ -20,3 +20,7 @@
 	path = presales-ichtyofaune-volet-peche
 	url = git@github.com:RNF-SI/presales-ichtyofaune-volet-peche.git
 	branch = main
+[submodule "presales_ichtyofaune_volet_stomacaux"]
+	path = presales_ichtyofaune_volet_stomacaux
+	url = git@github.com:RNF-SI/presales_ichtyofaune_volet_stomacaux.git
+	branch = main
