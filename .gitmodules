@@ -24,3 +24,7 @@
 	path = presales_ichtyofaune_volet_stomacaux
 	url = git@github.com:RNF-SI/presales_ichtyofaune_volet_stomacaux.git
 	branch = main
+[submodule "thalera"]
+	path = thalera
+	url = git@github.com:RNF-SI/thalera.git
+	branch = main
